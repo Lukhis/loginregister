@@ -114,7 +114,9 @@ class _MyHomePageState extends State<MyHomePage> {
               child: RaisedButton(
                 child: Text("Kamu belum terdaftar??!  DAFTAR untuk Registrasi"),
                 onPressed: () {
-                  return Registrasi();
+                  Navigator.push(context, MaterialPageRoute(
+                builder: (context) => Registrasi()
+                  ));
                 },
               ),
             ),
