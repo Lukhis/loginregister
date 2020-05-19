@@ -1,24 +1,7 @@
 import 'package:flutter/material.dart';
-//import './daftar.dart';
-import './login.dart';
-//import './homepage.dart';
+import './homepage.dart';
+import './daftar.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'PR Week 1 dan 2',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(title: 'Login and Register Page'),
-    );
-  }
-}
-/*
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
 
@@ -36,6 +19,7 @@ class _MyHomePageState extends State<MyHomePage> {
   TextEditingController passController = TextEditingController();
 
   String username="", password="";
+//   _MyHomePageState({this.username, this.password});
   
   _login() {
     setState(() {
@@ -163,4 +147,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-*/
